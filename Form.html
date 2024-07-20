@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+<h1>forms</h1>
+<form action="/tacos">
+    <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter username" name="username">
+    </div>
+    <br>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter your password" name="password">
+    </div>
+
+    <br>
+    <div>
+        <label for="number">Enter a Number</label>
+        <input id="number" type="number" placeholder="Enter  number" name="number" min="1" max="10">
+    </div>
+
+    <br>
+    <div>
+        <label for="color">Select Color</label>
+        <input id="color" type="color" placeholder="Select a color" name="color">
+    </div>
+
+    <br>
+
+    <button type="submit">Click</button>
+</form>
+
+<div>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" id="">
+        <button>search reddit</button>
+    </form>
+
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree</label>
+        <p>
+            <label for="S">Small </label>
+            <input type="radio" name="size" id="S" value="xs">
+            <label for="M">Medium</label>
+            <input type="radio" name="size" id="M" value="m">
+            <label for="L">Large</label>
+            <input type="radio" name="size" id="L" value="l">
+        </p>
+
+        <p>
+            <label for="meal">Please select an entry</label>
+            <select name="meal" id="meal">
+                <option value="---"> --Please select options---</option>
+                <option value="fish" sele>Fish</option>
+                <option value="Veg">Vegetable</option>
+                <option value="Steak">Steak</option>
+            </select>
+        </p>
+
+        <button>Agree</button>
+
+        <p>
+            <label for="cheese"></label>
+            <input type="range" id="cheese" min="2" max="10" step="2" name="cheese_Level">
+        </p>
+
+
+    </form>
+    <h2>Required fields </h2>
+    <form action="/tacos">
+
+        <label for="text">Any special request?</label>
+        <br>
+        <textarea id="text" cols="30" rows="5" name="request" required></textarea>
+        <p>
+            <label for="username1">username</label>
+            <input type="text" name="user" id="username1" minlength="5" maxlength="10" required>
+        </p>
+        <p>
+            <label for="email">email</label>
+            <input type="email" name="user" id="email" required>
+        </p>
+        <div>
+            <button>submit</button>
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>
